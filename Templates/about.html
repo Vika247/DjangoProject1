@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Об авторе</title>
+</head>
+<body>
+<h1>Об авторе</h1>
+<div> Имя: <b>{{name}}</b></div>
+<div> Отчество: <b>{{oname}}</b></div>
+<div> Фамилия: <b>{{surename}}</b></div>
+<div> Телефон: <b>{{phone}}</b></div>
+<div> Email: <b>{{email}}</b></div>
+</body>
+<footer>
+    <a href="{% url 'home' %}">Главная</a>
+    <p><a href="{% url 'items' %}">Список товаров</a> </p>
+</footer>
+</html>

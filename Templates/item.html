@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Товар{% endblock %}
+
+{% block header %}Товар{% endblock %}
+
+{% block content %}
+    {% if itemm.count == 0 %}
+        Товара нет на складе
+    {% else %}
+        <p>Товар: {{itemm.name}} {{itemm.brand}}</p>
+        <p>Количество: {{itemm.count}}</p>
+    {% endif %}
+{% endblock %}
+
+{% block footer %}
+    <a href="{% url 'items' %}">Список товаров</a>
+{% endblock %}
